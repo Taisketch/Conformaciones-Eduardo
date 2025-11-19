@@ -37,35 +37,28 @@ subtitle: "Capítulo 1",
 image: "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?auto=format&fit=crop&w=1200&q=80",
 content: {
 heading: "Taiyang: El Gran Yang",
-description: "La conformación más externa. Taiyang es la primera línea de defensa, la muralla que protege al imperio del
-cuerpo contra el frío y el viento.",
+description: "La conformación más externa. Taiyang es la primera línea de defensa, la muralla que protege al imperio del cuerpo contra el frío y el viento.",
 cards: [
 {
 title: "Defensa Externa",
-icon:
-<Shield className="w-6 h-6" />,
+icon: <Shield className="w-6 h-6" />,
 shortText: "La muralla del cuerpo",
 modalTitle: "Primera Línea de Defensa",
-modalContent: "Como la conformación más superficial, Taiyang actúa protegiendo al organismo. Controla la apertura y
-cierre de los poros (Cou Li) en el espacio entre la piel y los músculos para regular la temperatura."
+modalContent: "Como la conformación más superficial, Taiyang actúa protegiendo al organismo. Controla la apertura y cierre de los poros (Cou Li) en el espacio entre la piel y los músculos para regular la temperatura."
 },
 {
 title: "Calor y Corazón",
-icon:
-<Thermometer className="w-6 h-6" />,
+icon: <Thermometer className="w-6 h-6" />,
 shortText: "Sangre caliente",
 modalTitle: "Conexión con el Corazón",
-modalContent: "Taiyang es la expansión del fuego del Corazón. Es sangre caliente bombeada a la superficie para
-mantenernos calientes frente al entorno."
+modalContent: "Taiyang es la expansión del fuego del Corazón. Es sangre caliente bombeada a la superficie para mantenernos calientes frente al entorno."
 },
 {
 title: "Raíz y Rama",
-icon:
-<Wind className="w-6 h-6" />,
+icon: <Wind className="w-6 h-6" />,
 shortText: "Frío vs Yang",
 modalTitle: "Dualidad Raíz y Rama",
-modalContent: "Raíz (Ben) = Agua Fría. Rama (Biao) = Yang. Se necesita mucho Yang (Fuego) para controlar el Agua Fría de
-la superficie."
+modalContent: "Raíz (Ben) = Agua Fría. Rama (Biao) = Yang. Se necesita mucho Yang (Fuego) para controlar el Agua Fría de la superficie."
 }
 ]
 }
@@ -77,35 +70,28 @@ subtitle: "Capítulo 2",
 image: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1200&q=80",
 content: {
 heading: "Anatomía Energética",
-description: "Gobernando la espalda (el Norte del cuerpo), Taiyang gestiona los recursos hídricos a través de la Vejiga
-y separa lo puro de lo turbio mediante el Intestino Delgado.",
+description: "Gobernando la espalda (el Norte del cuerpo), Taiyang gestiona los recursos hídricos a través de la Vejiga y separa lo puro de lo turbio mediante el Intestino Delgado.",
 cards: [
 {
 title: "La Espalda",
-icon:
-<User className="w-6 h-6" />,
+icon: <User className="w-6 h-6" />,
 shortText: "Zona Yang Mayor",
 modalTitle: "El Escudo Posterior",
-modalContent: "La espalda es la zona más expuesta al 'Viento Ladrón'. El canal Taiyang recorre toda la cadena posterior,
-protegiendo la estructura."
+modalContent: "La espalda es la zona más expuesta al 'Viento Ladrón'. El canal Taiyang recorre toda la cadena posterior, protegiendo la estructura."
 },
 {
 title: "Vejiga",
-icon:
-<Droplets className="w-6 h-6" />,
+icon: <Droplets className="w-6 h-6" />,
 shortText: "Transformación del Qi",
 modalTitle: "Vejiga (Zu Taiyang)",
-modalContent: "Almacena y vaporiza los fluidos. Su función es hacer ascender el 'Agua Pura' hacia el Pulmón para
-mantener el ciclo hidrológico."
+modalContent: "Almacena y vaporiza los fluidos. Su función es hacer ascender el 'Agua Pura' hacia el Pulmón para mantener el ciclo hidrológico."
 },
 {
 title: "Intestino Delgado",
-icon:
-<Flame className="w-6 h-6" />,
+icon: <Flame className="w-6 h-6" />,
 shortText: "Separación",
 modalTitle: "Intestino Delgado (Shou Taiyang)",
-modalContent: "Recibe del estómago y separa lo claro (nutrición) de lo turbio (desechos). Es el fuego fisiológico en el
-Jiao Inferior."
+modalContent: "Recibe del estómago y separa lo claro (nutrición) de lo turbio (desechos). Es el fuego fisiológico en el Jiao Inferior."
 }
 ]
 }
@@ -117,35 +103,28 @@ subtitle: "Capítulos 3 y 4",
 image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
 content: {
 heading: "Signos Clínicos y Ataques",
-description: "\"Todos los pulsos flotantes, rigidez y dolor de cabeza con aversión al frío pertenecen a Taiyang\". La
-enfermedad se manifiesta por Exceso (Cierre) o Deficiencia (Apertura).",
+description: "\"Todos los pulsos flotantes, rigidez y dolor de cabeza con aversión al frío pertenecen a Taiyang\". La enfermedad se manifiesta por Exceso (Cierre) o Deficiencia (Apertura).",
 cards: [
 {
 title: "Pulso Flotante",
-icon:
-<Activity className="w-6 h-6" />,
+icon: <Activity className="w-6 h-6" />,
 shortText: "Yang en Superficie",
 modalTitle: "Pulso Flotante (Fu)",
-modalContent: "Se siente al tocar la piel. Indica que la energía defensiva está luchando en el exterior contra un
-patógeno."
+modalContent: "Se siente al tocar la piel. Indica que la energía defensiva está luchando en el exterior contra un patógeno."
 },
 {
 title: "Shang Han",
-icon:
-<Shield className="w-6 h-6" />,
+icon: <Shield className="w-6 h-6" />,
 shortText: "Daño por Frío",
 modalTitle: "Shang Han (Exceso)",
-modalContent: "Ataque de Frío + Poros Cerrados. Fiebre SIN sudor, dolor corporal intenso, pulso tenso. Tratamiento: Ma
-Huang Tang."
+modalContent: "Ataque de Frío + Poros Cerrados. Fiebre SIN sudor, dolor corporal intenso, pulso tenso. Tratamiento: Ma Huang Tang."
 },
 {
 title: "Zhong Feng",
-icon:
-<Wind className="w-6 h-6" />,
+icon: <Wind className="w-6 h-6" />,
 shortText: "Ataque de Viento",
 modalTitle: "Zhong Feng (Deficiencia)",
-modalContent: "Ataque de Viento + Poros Abiertos. Fiebre CON sudor, aversión al viento, pulso moderado. Tratamiento: Gui
-Zhi Tang."
+modalContent: "Ataque de Viento + Poros Abiertos. Fiebre CON sudor, aversión al viento, pulso moderado. Tratamiento: Gui Zhi Tang."
 }
 ]
 }
@@ -165,35 +144,28 @@ subtitle: "Capítulo 1",
 image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
 content: {
 heading: "Yangming: Los Dos Yang Unidos",
-description: "Si Taiyang es la apertura, Yangming es el cierre. Representa la etapa donde el Yang se vuelve brillante y
-se interioriza, asociándose con la Sequedad y el Metal.",
+description: "Si Taiyang es la apertura, Yangming es el cierre. Representa la etapa donde el Yang se vuelve brillante y se interioriza, asociándose con la Sequedad y el Metal.",
 cards: [
 {
 title: "Unión en Brillo",
-icon:
-<Sun className="w-6 h-6" />,
+icon: <Sun className="w-6 h-6" />,
 shortText: "Convergencia",
 modalTitle: "Los dos Yang se unen en Brillo",
-modalContent: "No significa 'sumar', sino 'converger'. Es el Yang Qi concentrándose y consolidándose hacia adentro. Es
-lo opuesto a dispersarse. Representa el Cenit del Yang antes de descender."
+modalContent: "No significa 'sumar', sino 'converger'. Es el Yang Qi concentrándose y consolidándose hacia adentro. Es lo opuesto a dispersarse. Representa el Cenit del Yang antes de descender."
 },
 {
 title: "Raíz y Centro",
-icon:
-<Layout className="w-6 h-6" />,
+icon: <Layout className="w-6 h-6" />,
 shortText: "Sequedad y Humedad",
 modalTitle: "Estructura Raíz-Centro",
-modalContent: "Raíz = Sequedad (Metal/Otoño).\nCentro = Taiyin (Tierra/Humedad).\n\nEl Estómago (Yangming) es la Tierra
-Seca, pero necesita la humedad del Bazo (Taiyin) en su centro para funcionar. Se trata 'desde el centro'."
+modalContent: "Raíz = Sequedad (Metal/Otoño).\nCentro = Taiyin (Tierra/Humedad).\n\nEl Estómago (Yangming) es la Tierra Seca, pero necesita la humedad del Bazo (Taiyin) en su centro para funcionar. Se trata 'desde el centro'."
 },
 {
 title: "Sequedad (Metal)",
-icon:
-<Wind className="w-6 h-6" />,
+icon: <Wind className="w-6 h-6" />,
 shortText: "Otoño y Descenso",
 modalTitle: "Naturaleza de la Sequedad",
-modalContent: "Yangming se asocia al Oeste y al Metal. El Metal es pesado y desciende. La sequedad fisiológica es
-necesaria para 'endurecer' y formar las heces, pero el calor excesivo la vuelve patológica."
+modalContent: "Yangming se asocia al Oeste y al Metal. El Metal es pesado y desciende. La sequedad fisiológica es necesaria para 'endurecer' y formar las heces, pero el calor excesivo la vuelve patológica."
 }
 ]
 }
@@ -205,35 +177,28 @@ subtitle: "Capítulo 2",
 image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
 content: {
 heading: "La Familia del Estómago",
-description: "El 'Wei Jia' no es solo el órgano anatómico, sino un sistema funcional que incluye al Intestino Grueso y
-gobierna el descenso de todo lo turbio.",
+description: "El 'Wei Jia' no es solo el órgano anatómico, sino un sistema funcional que incluye al Intestino Grueso y gobierna el descenso de todo lo turbio.",
 cards: [
 {
 title: "Familia del Estómago",
-icon:
-<User className="w-6 h-6" />,
+icon: <User className="w-6 h-6" />,
 shortText: "Sistema Digestivo",
 modalTitle: "Wei Jia (Familia del Estómago)",
-modalContent: "Incluye al Estómago y los 6 Intestinos (Fu). Funciona con la regla: 'Si el estómago está lleno, los
-intestinos vacíos'. Si ambos se llenan simultáneamente, hay enfermedad (exceso/bloqueo)."
+modalContent: "Incluye al Estómago y los 6 Intestinos (Fu). Funciona con la regla: 'Si el estómago está lleno, los intestinos vacíos'. Si ambos se llenan simultáneamente, hay enfermedad (exceso/bloqueo)."
 },
 {
 title: "Ríos y Mares",
-icon:
-<ArrowDownCircle className="w-6 h-6" />,
+icon: <ArrowDownCircle className="w-6 h-6" />,
 shortText: "Función de Descenso",
 modalTitle: "Los Grandes Ríos",
-modalContent: "Los 6 canales son ríos que desembocan en el mar (Estómago). Su función crítica es el DESCENSO. Si
-Yangming no desciende, el Qi se rebela hacia arriba (vómitos, reflujo)."
+modalContent: "Los 6 canales son ríos que desembocan en el mar (Estómago). Su función crítica es el DESCENSO. Si Yangming no desciende, el Qi se rebela hacia arriba (vómitos, reflujo)."
 },
 {
 title: "Conexión Cerebral",
-icon:
-<Brain className="w-6 h-6" />,
+icon: <Brain className="w-6 h-6" />,
 shortText: "Eje Intestino-Cerebro",
 modalTitle: "Relación con el Shen",
-modalContent: "El Estómago e Intestinos tienen conexión directa con el Cerebro ('Mar de la Médula'). Por eso, el calor
-en Yangming (estreñimiento severo) causa delirio, confusión y manía (visto en la clínica como 'locura por calor')."
+modalContent: "El Estómago e Intestinos tienen conexión directa con el Cerebro ('Mar de la Médula'). Por eso, el calor en Yangming (estreñimiento severo) causa delirio, confusión y manía (visto en la clínica como 'locura por calor')."
 }
 ]
 }
@@ -245,36 +210,28 @@ subtitle: "Capítulo 3",
 image: "https://images.unsplash.com/photo-1506369466222-428c6a9f36f8?auto=format&fit=crop&w=1200&q=80",
 content: {
 heading: "Los 4 Grandes",
-description: "La enfermedad Yangming es el imperio del Calor y el Exceso. Es una lucha vigorosa donde el cuerpo aún
-tiene mucha energía.",
+description: "La enfermedad Yangming es el imperio del Calor y el Exceso. Es una lucha vigorosa donde el cuerpo aún tiene mucha energía.",
 cards: [
 {
 title: "Los 4 Grandes",
-icon:
-<Flame className="w-6 h-6" />,
+icon: <Flame className="w-6 h-6" />,
 shortText: "Síntomas Clave",
 modalTitle: "Síndrome de los 4 Grandes",
-modalContent: "1. Gran Fiebre (sin aversión al frío, aversión al calor).\n2. Gran Sed (deseo de agua fría).\n3. Gran
-Sudor (el calor expulsa líquidos).\n4. Gran Pulso (Desbordante/Hong Mai)."
+modalContent: "1. Gran Fiebre (sin aversión al frío, aversión al calor).\n2. Gran Sed (deseo de agua fría).\n3. Gran Sudor (el calor expulsa líquidos).\n4. Gran Pulso (Desbordante/Hong Mai)."
 },
 {
 title: "Calor vs Exceso",
-icon:
-<Zap className="w-6 h-6" />,
+icon: <Zap className="w-6 h-6" />,
 shortText: "Tipos de Patología",
 modalTitle: "Diferenciación",
-modalContent: "Calor (Sin forma): Fiebre alta, sudor. Se trata con Bai Hu Tang (Yeso) para enfriar.\nExceso (Con forma):
-Heces secas, dolor abdominal, estreñimiento. Se trata con Cheng Qi Tang (Ruibarbo) para purgar."
+modalContent: "Calor (Sin forma): Fiebre alta, sudor. Se trata con Bai Hu Tang (Yeso) para enfriar.\nExceso (Con forma): Heces secas, dolor abdominal, estreñimiento. Se trata con Cheng Qi Tang (Ruibarbo) para purgar."
 },
 {
 title: "Rutas de Entrada",
-icon:
-<ArrowRight className="w-6 h-6" />,
+icon: <ArrowRight className="w-6 h-6" />,
 shortText: "Origen",
 modalTitle: "Cómo llega a Yangming",
-modalContent: "1. Desde Taiyang: Si se suda demasiado, se dañan los fluidos y se seca el interior (Constricción del
-Bazo).\n2. Desde Shaoyang: Tratamiento incorrecto de purga.\n3. Directo: Por comer alimentos muy calientes o
-constitución seca."
+modalContent: "1. Desde Taiyang: Si se suda demasiado, se dañan los fluidos y se seca el interior (Constricción del Bazo).\n2. Desde Shaoyang: Tratamiento incorrecto de purga.\n3. Directo: Por comer alimentos muy calientes o constitución seca."
 }
 ]
 }
