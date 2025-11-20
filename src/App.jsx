@@ -20,7 +20,9 @@ import {
   Zap,
   Bookmark,
   Snowflake,
-  Leaf
+  Leaf,
+  Target,
+  AlertTriangle
 } from 'lucide-react';
 
 // --- DATOS DEL CURSO ---
@@ -75,6 +77,13 @@ const courseData = [
               shortText: "Máxima Energía",
               modalTitle: "El Reloj Biológico",
               modalContent: "El canal de Vejiga tiene su marea alta de 3pm a 5pm. El Intestino Delgado de 1pm a 3pm. Es el momento de mayor actividad Yang del día, preparándose para el atardecer."
+            },
+            {
+              title: "Psiquismo: La Frontera",
+              icon: <Brain className="w-6 h-6" />,
+              shortText: "Extroversión y Límites",
+              modalTitle: "La Psicología de Taiyang",
+              modalContent: "Taiyang representa la capacidad de proyectarse hacia el exterior. Es la fuerza que nos permite ser asertivos, establecer límites territoriales y sociales, y decir 'no'. Una patología en este nivel puede manifestarse como inseguridad extrema, agorafobia o incapacidad para defenderse."
             }
           ]
         }
@@ -130,6 +139,39 @@ const courseData = [
                     details: "Su rol es separar los fluidos claros (que van a la Vejiga) de los turbios (que van al Intestino Grueso). Es vital para el control de los líquidos en el Jiao Inferior."
                 }
             ]
+          },
+          keyPoints: {
+             title: "Puntos Resonantes de Taiyang",
+             cards: [
+                {
+                    title: "Vejiga 40 (Weizhong)",
+                    icon: <Target className="w-6 h-6" />,
+                    shortText: "Centro del Pliegue",
+                    modalTitle: "BL-40: Comando de la Espalda",
+                    modalContent: "Ubicado en el hueco poplíteo. Es el punto Mar (He) y Tierra. Fundamental para tratar cualquier dolor de espalda (lumbalgia) y para despejar el calor de la sangre. 'La espalda se comanda desde Weizhong'."
+                },
+                {
+                    title: "Vejiga 60 (Kunlun)",
+                    icon: <Target className="w-6 h-6" />,
+                    shortText: "Montaña Kunlun",
+                    modalTitle: "BL-60: Fuego del Taiyang",
+                    modalContent: "Punto Río y Fuego. Aspirina de la acupuntura. Desciende el Yang excesivo de la cabeza (cefaleas, mareos). Contraindicado en embarazo por su fuerte acción descendente."
+                },
+                {
+                    title: "Vejiga 67 (Zhiyin)",
+                    icon: <Target className="w-6 h-6" />,
+                    shortText: "Llegada del Yin",
+                    modalTitle: "BL-67: Punto Jing-Pozo",
+                    modalContent: "Último punto del canal, en el dedo pequeño del pie. Famoso por corregir la mala posición fetal (moxa). Expulsa el viento y aclara la mente y los ojos."
+                },
+                {
+                    title: "Intestino Delgado 3 (Houxi)",
+                    icon: <Target className="w-6 h-6" />,
+                    shortText: "Arroyo Posterior",
+                    modalTitle: "SI-3: Apertura de Du Mai",
+                    modalContent: "Punto Arroyo y Madera. Abre el Vaso Gobernador (Du Mai). Esencial para tratar dolor de cuello, columna vertebral y epilepsia. Relaja los tendones y aclara el espíritu."
+                }
+             ]
           }
         }
       },
@@ -221,6 +263,32 @@ const courseData = [
                 rightTitle: "Para Sangre (Xu Xue):",
                 rightText: "Romper el estasis de sangre y purgar el calor. Fórmula: Tao He Cheng Qi Tang."
             }
+          },
+          transmission: {
+            title: "Mutación de la Enfermedad",
+            cards: [
+                {
+                    title: "A Yangming",
+                    icon: <Flame className="w-6 h-6" />,
+                    shortText: "Interiorización",
+                    modalTitle: "De Superficie a Interior",
+                    modalContent: "Si el patógeno no es expulsado, penetra y se transforma en Calor. La aversión al frío desaparece y surge la aversión al calor. Síntomas: Fiebre alta, gran sed, sudor profuso."
+                },
+                {
+                    title: "A Shaoyang",
+                    icon: <Activity className="w-6 h-6" />,
+                    shortText: "Medio Interior",
+                    modalTitle: "Atrapado en el Medio",
+                    modalContent: "El patógeno se queda entre el exterior y el interior. Alternancia de frío y calor (malaria), sabor amargo en la boca, dolor en los costados."
+                },
+                {
+                    title: "A Taiyin",
+                    icon: <Snowflake className="w-6 h-6" />,
+                    shortText: "Debilidad del Yang",
+                    modalTitle: "Hundimiento en el Yin",
+                    modalContent: "Si el Yang del cuerpo es muy débil, el patógeno salta las etapas Yang y ataca directamente al Bazo (Taiyin). Diarrea, vómitos, ausencia de fiebre, frío en extremidades."
+                }
+            ]
           }
         }
       }
@@ -647,6 +715,21 @@ const ChapterSection = ({ chapter, themeColor, id }) => {
         <OrganTabs data={chapter.content.organTabs} themeColor={themeColor} />
       )}
 
+      {/* Key Points Section */}
+      {chapter.content.keyPoints && (
+         <div className="mt-12">
+             <h3 className="text-2xl font-bold text-white mb-6">{chapter.content.keyPoints.title}</h3>
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
+                {chapter.content.keyPoints.cards.map((card, index) => (
+                  <ExpandableCard key={index} card={card} isExpanded={expandedCardIndex===`kp-${index}`} onToggle={()=>
+                    handleCardToggle(`kp-${index}`)}
+                    themeColor={themeColor}
+                  />
+                ))}
+             </div>
+         </div>
+      )}
+
       {chapter.content.pathologyComparison && (
         <PathologyComparison data={chapter.content.pathologyComparison} themeColor={themeColor} />
       )}
@@ -656,6 +739,21 @@ const ChapterSection = ({ chapter, themeColor, id }) => {
             <h3 className="text-2xl font-bold text-white mb-6">Patologías de Órgano (Taiyang Fu)</h3>
             <PathologyComparison data={chapter.content.organPathology} themeColor={themeColor} />
         </div>
+      )}
+
+      {/* Transmission Section */}
+      {chapter.content.transmission && (
+         <div className="mt-12">
+             <h3 className="text-2xl font-bold text-white mb-6">{chapter.content.transmission.title}</h3>
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                {chapter.content.transmission.cards.map((card, index) => (
+                  <ExpandableCard key={index} card={card} isExpanded={expandedCardIndex===`tr-${index}`} onToggle={()=>
+                    handleCardToggle(`tr-${index}`)}
+                    themeColor={themeColor}
+                  />
+                ))}
+             </div>
+         </div>
       )}
 
     </div>
